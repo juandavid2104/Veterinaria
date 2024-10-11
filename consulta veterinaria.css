@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Esto evita el scroll horizontal */
+    width: 100%;
+}
+/* Encabezado fijo */
+.banner {
+    margin: 0.4vh;
+    position: relative; 
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 85vw; 
+    border: 1px solid #27B8D1; 
+    padding: 30px; 
+    border-radius: 10px; 
+    z-index: 1;  
+}
+/* Contenido del encabezado */
+.header-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 100px; 
+    flex-wrap: wrap;
+}
+/* Logo encabezado */
+.logo img {
+    width: 100px;
+    height: auto; 
+}
+/* Menú del encabezado */
+.navigation ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+    gap: 4vw; 
+    flex-wrap: wrap; 
+    font-size: 1.2vw;
+}
+.navigation a {
+    text-decoration: none;
+    color: #002035;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 20px;   
+}
+.navigation a:hover {
+    color: #EE6930; /* Color del texto al pasar el ratón */
+}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .banner {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        left: 0;
+        transform: none;
+    }
+
+    .header-content {
+        justify-content: center; /* Centra el contenido en pantallas pequeñas */
+    }
+
+    .navigation ul {
+        justify-content: center; /* Centra los elementos del menú en pantallas pequeñas */
+        gap: 10px;
+    }
+}
+/* CONTENIDO DE LA PANTALLA
+
+/* Estilo del título de la consulta veterinaria */
+.consulta-veterinaria-title {
+    color: #0e93b4; 
+    font-size: 1.3vw; 
+    padding: 5vw;
+    margin-top: -7vh; 
+    padding-left: 8vw; 
+}
+/* Contenedor para el texto y la imagen */
+.text-image-container {
+    display: flex; /* Utiliza flexbox para organizar los elementos en una fila */
+    justify-content: center; /* Distribuye el espacio entre el texto y la imagen */
+    width: 95vw; /* Asegura que el contenedor ocupe el ancho completo */
+    margin-top: -10vh
+}
+/* Estilo del texto */
+.aligned-text {
+    width: 100%; /* Ancho del contenedor del texto */
+    font-size: 1.4em; /* Tamaño de la fuente */
+    text-align: justify; /* Justifica el texto */
+    padding-left: 10vw;
+    margin-top: 3vh;
+    color: #444;
+}
+/* Estilo de la imagen */
+.aligned-image {
+    width: 15vw; /* Ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-top: -5vh;
+    margin-left: 4vw;
+}
+/* Contenedor de la imagen y el pie de foto */
+.image-and-caption {
+    display: flex;
+    flex-direction: column; /* Organiza la imagen y el pie de foto en una columna */
+    align-items: center; /* Centra la imagen y el pie de foto horizontalmente */
+    width: 30vw; /* Ancho del contenedor de la imagen */
+}
+/* Estilo del pie de foto */
+.caption-text {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que desees */
+    font-weight: bold; /* Pone el texto en negrita */
+    font-size: 10px; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto del pie de foto */
+    margin: 1.4vw;
+    padding: 0;
+    margin-left: 7vw;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* La altura del contenedor, puedes ajustarla según lo necesites */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    overflow: hidden;
+    background-color: rgba(19, 19, 19, 0.685); /* Añade un fondo oscuro semitransparente */
+    border-radius: 8px; /* Bordes redondeados del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del cuadro */
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 0.8; /* Hacer que el video sea más claro */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #0e93b4;
+    text-align: center;
+    padding: 3vw; /* Añade un relleno alrededor del texto */
+    background-color: rgba(0, 0, 0, 0); /* Fondo oscuro semitransparente para el texto */
+    border-radius: 10px; /* Bordes redondeados del contenido */
+    
+}
+.text-general{
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 1.6vw;
+    margin: 2vw;
+    margin-top: 10vh;
+}
+.salud-prioridad {
+    color: #0e93b4;
+    text-align: center;
+    font-size: 2vw;
+    padding: 8vw;
+    margin-top: -8vh;
+    font-weight: bold; /* Pone el texto en negrita */
+}
+.imagen-perro{
+    display: flex;
+    margin-top: -10vh;
+    margin-left: 9vw;
+}
+/* Encabezado principal */
+.texto-consulta h1 {
+    color: #0e93b4;
+    font-size: 2em;
+    margin-left: 50vw;
+    margin-top: -45vh;
+    
+}
+
+/* Texto descriptivo */
+.texto-consulta .descripcion {
+    font-size: 1.7em;
+    color: #444;
+    max-width: 50vw;
+    margin: 0, 0;
+    line-height: 1.5;
+    padding-left: 40vw;
+    text-align: justify;
+}
+.descripcion1{
+    font-size: 1.7em;
+    color: #444;
+    text-align: justify;
+    max-width: 83vw;
+    margin-top: 12vh;
+    padding-left: 8vw;
+}
+.especialidades-container{
+    color: #0e93b4;
+    font-size: 2em;
+    padding: 2vw;
+    margin-top: -2vw;
+    text-align: center;
+}
+.imagen-mujer-perro img {
+    max-width: 30vw;
+    height: auto;
+    margin-left: 65vw;
+    margin-top: -10vh;
+    
+}
+/* Especialidades veterinarias */
+.especialidades h4 {
+    font-size: 2em;
+    color: #458fa1;
+    margin-top: -50vh;
+    margin-left: 8vw;
+}
+.lista-especialidades li {
+    font-size: 1.2em;
+    color: #007BFF; /* Azul vibrante */
+    margin: 20px 0;
+    margin-left: 20vw;
+}
+/* Contenedor del botón de WhatsApp */
+.whatsapp-container {
+    position: relative; /* Posicionamiento relativo para el contenedor */
+    text-align: right; /* Alinea el botón a la derecha */
+    padding-right: 80px;
+    margin: 3%;
+}
+
+/* Estilo del botón de WhatsApp */
+.whatsapp-button {
+    border-radius: 0.4vw;
+    display: inline-block; /* Para alinear con otros elementos en línea */
+    background-color: #39A9DA; /* Color de fondo de WhatsApp */
+    padding: 10px; /* Espaciado interno del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    transition: transform 0.6s; /* Transición para efectos de hover */
+    text-align: center; /* Centra el contenido */
+    animation: moveUpDown 6s infinite; /* Aplica la animación de movimiento */
+}
+
+.whatsapp-button img {
+    width: 200px; /* Tamaño del ícono */
+    height: auto; /* Mantiene las proporciones del ícono */
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+/*PIE DE PANTALLA */
+.footer {
+    display: flex;
+    background-color: #058da5; /* Color de fondo del pie de página */
+    padding: 7px 30px; /* Ajusta el relleno para aumentar la altura */
+    position: relative; /* Asegura que los elementos dentro se posicionen correctamente */
+    color: black; /* Color del texto */
+    font-size: 1vw; /* Tamaño del texto */
+}
+.footer-follow {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Alinea verticalmente el texto y los íconos */
+    flex-direction: row;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    gap: 5vw; /* Espacio entre el texto y los íconos */
+}
+.footer-text {
+    margin: 0; /* Elimina el margen por defecto */
+}
+.social {
+    display: 10px; /* Muestra los iconos en una fila */
+    gap: 10px; /* Espacio entre los iconos */
+}
+.footer-section {
+    padding-right: 4vw;
+    font-family: Arial, sans-serif
+
+}
+.footer-logo {
+    width: 10vw; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-top: 4vw; /* Ajusta este valor para mover el logo hacia abajo */
+    border-radius: 5px;
+    margin-left: -2vw;
+    align-items: center;
+    padding-left: 5vw;
+}
+.contact-info { /* Atencion 24 HORAS*/
+    display: flex;
+    flex-direction: column; /* Coloca los ítems uno debajo del otro */
+    gap: 1vw; /* Espacio entre cada ítem */
+}
+.contact-item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    gap: 2vw; /* Espacio entre el ícono y el texto */
+}
+.contact-item img {
+    flex-shrink: 0; /* Evita que el ícono se reduzca */
+}
+.contact-item p {
+    margin: 0; /* Elimina el margen alrededor del texto */
+}
+.social-icons {
+    display: flex; /* Muestra los íconos en una fila dentro de un contenedor en línea */
+    gap: 10px; /* Espacio entre los íconos */
+}
+.separator {
+    border-left: 1px solid black; /* Línea vertical negra */
+    margin: 0.2vw 0; /* Espacio entre las secciones y la línea */
+    padding-left: 3vw;
+}
+.location-section {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: flex-start; /* Alinea los elementos al inicio de la sección */
+    left: 3vh;
+}
+.sede-title {
+    font-size: 2vw; /* Tamaño del texto "Nuestra Sede" */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #0c3970;
+    left: 3vh;
+}
+.location-map {
+    width: 12.6vw; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 40px 0; /* Añade un margen vertical alrededor del mapa */
+    align-self: flex-end; /* Mueve el mapa a la derecha */
+    left: 3vw;
+}
+.direccion-text {
+    font-size: 70%; /* Tamaño del texto de la dirección */
+    top: 1vw; /* Espacio encima de la dirección */
+    right: 40vw;
+}

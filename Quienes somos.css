@@ -1,0 +1,692 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+.banner {
+    margin: 0;
+    position: relative; 
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 85vw; 
+    border: 1px solid #27B8D1; 
+    padding: 20px; 
+    border-radius: 10px; 
+    z-index: 1000; 
+    background-color: rgba(107, 146, 182, 0.24); 
+}
+.header-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 100px; 
+    flex-wrap: wrap;
+}
+.logo img {
+    width: 100px;
+    height: auto; 
+}
+.navigation ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+    gap: 4vw; 
+    flex-wrap: wrap; 
+    font-size: 1.2vw;
+}
+.navigation a {
+    text-decoration: none;
+    color: #002035;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 20px;   
+}
+.navigation a:hover {
+    color: #EE6930; 
+}
+.mission-title {
+    color: #0c3970; 
+    font-size: 2vw; 
+    margin: 0; 
+    text-align: center;
+    margin-top: 1vh;
+}
+.vision-title {
+    color: #0c3970; 
+    font-size: 2vw; 
+    margin: 0; 
+    text-align: center;
+    margin-top: 1vh;
+}
+.text-container {
+    border: 1px solid #27B8D1; 
+    background-color: rgba(107, 146, 182, 0.24); 
+    margin: 1.8vw;
+    width: 85vw;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative; 
+    z-index: 1; 
+    top: 25vh; 
+    transition: background-color 0.3s ease; 
+}
+.text-container:hover {
+    background-color: rgba(107, 146, 182, 0.5); 
+}
+.mission-text {
+    font-size: 1.2vw;
+    color: #FDFEFF;
+    margin: 3vw;
+}
+.vision-text {
+    font-size: 1.2vw;
+    color: #FDFEFF;
+    margin: 3vw;
+}
+.slider-images {
+    position: relative;
+    z-index: 0; 
+}
+.slider {
+    position: relative; 
+    top: -20vh;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    margin: 2px;
+    list-style: none;
+    animation: slide 30s infinite;
+}
+.slider li {
+    min-width: 100%;
+}
+.slider img {
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80%;
+    background-color: rgba(44, 105, 180, 0.301); 
+    z-index: 2; 
+}
+.slider-text {
+    position: absolute;
+    margin-top: -25vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    text-align: justify;
+    z-index: 2; 
+}
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+.informacion-adicional {
+    text-align: justify;
+    background-color: #FDFEFF; 
+    margin-top: -35vh; 
+}
+.Quienes-somos {
+    text-align: center;
+    color: #0e93b4;
+    font-size: 1.5vw;
+}
+.text-p {
+    font-size: 1.3vw; 
+    line-height: 1.5; 
+    color: #444; 
+    text-align: justify;
+    margin: 3vw; 
+    max-width: 80vw; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.video-style {
+    border-radius: 0.4vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.719); 
+    width: 100%; 
+    max-width: 80vw; 
+    height: auto; 
+    display: block; 
+    margin-left: 9vw;
+    padding: 0.3vw; 
+}
+.parrafo {
+    font-size: 1.3vw; 
+    line-height: 1.5; 
+    color: #444; 
+    text-align: justify;
+    margin: 3vw; 
+    max-width: 80vw; 
+    margin-left: auto; 
+    margin-right: auto; 
+}  
+.whatsapp-container {
+    position: relative; 
+    text-align: right; 
+    padding-right: 80px; 
+    margin: 2%;
+}
+.whatsapp-button {
+    border-radius: 0.4vw;
+    display: inline-block; 
+    background-color: #39A9DA; 
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.6s; 
+    text-align: center; 
+    animation: moveUpDown 6s infinite; 
+}
+.whatsapp-button img {
+    width: 200px; 
+    height: auto; 
+}
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+}
+.footer {
+    display: flex;
+    background-color: #058da5; 
+    padding: 7px 30px; 
+    position: relative; 
+    color: black; 
+    font-size: 1vw; 
+}
+.footer-follow {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row;
+    text-align: center; 
+    width: 100%; 
+    gap: 5vw; 
+}
+.footer-text {
+    margin: 0; 
+}
+.social {
+    display: flex; 
+    gap: 10px; 
+}
+.footer-section {
+    padding-right: 4vw;
+    font-family: Arial, sans-serif;
+}
+.footer-logo {
+    width: 10vw; 
+    height: auto; 
+    margin-top: 4vw; 
+    border-radius: 5px;
+    margin-left: -2vw;
+    align-items: center;
+    padding-left: 5vw;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column; 
+    gap: 1vw; 
+}
+.contact-item {
+    display: flex;
+    align-items: center; 
+    gap: 2vw; 
+}
+.contact-item img {
+    flex-shrink: 0; 
+}
+
+.contact-item p {
+    margin: 0; 
+}
+.social-icons {
+    display: flex; 
+    gap: 10px; 
+}
+.separator {
+    border-left: 1px solid black; 
+    margin: 0.2vw 0; 
+    padding-left: 3vw;
+}
+.location-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    left: 3vh;
+}
+.sede-title {
+    font-size: 2vw; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+    color: #0c3970;
+    left: 3vh;
+}
+.location-map {
+    width: 12.6vw; 
+    height: auto; 
+    margin: 40px 0; 
+    align-self: flex-end; 
+    left: 3vw;
+}
+.direccion-text {
+    font-size: 70%; 
+    top: 1vw; 
+    right: 40vw;
+}
+@media (max-width:1200px) and (min-width:601px){
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .banner {
+        margin: 5vh;
+        position: relative; 
+        top: -5.4vh;
+        margin-left:1vw ; 
+        transform: translateX(-50%); 
+        width: 85vw; 
+        border: 1px solid #27b8d100; 
+        padding: 10px; 
+        border-radius: 10px; 
+        z-index: 1000; 
+        background-color: rgba(107, 146, 182, 0.185); 
+    }
+    .header-content {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        gap: 100px; 
+        flex-wrap: wrap;
+    }
+    .logo img {
+        width: 70px;
+        height: auto; 
+    }
+    .navigation ul {
+        list-style-type: none; 
+        margin: 0;
+        padding: 0; 
+        display: flex; 
+        gap: 4vw; 
+        flex-wrap: wrap; 
+        font-size: 1.2vw;
+    }
+    .navigation a {
+        text-decoration: none;
+        color: #002035;
+        font-weight: bold;
+        padding: 2px;
+        border-radius: 20px;   
+    }
+    .navigation a:hover {
+        color: #EE6930; 
+    }
+    .mission-title {
+        color: #0c3970; 
+        font-size: 2.2vw; 
+        margin: 0; 
+        text-align: center;
+        margin-top: 1.5vh;
+    }
+    .vision-title {
+        color: #0c3970; 
+        font-size: 2.2vw; 
+        margin: 0; 
+        text-align: center;
+        margin-top: 1.5vh;
+    }
+    .text-container {
+        border: 1px solid #27b8d173; 
+        background-color: rgba(107, 146, 182, 0.24); 
+        margin: 2px;
+        width: 80vw;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        position: relative; 
+        z-index: 1; 
+        top: 26vh; 
+        transition: background-color 0.3s ease; 
+    }
+    .text-container:hover {
+        background-color: rgba(107, 146, 182, 0.5); 
+    }
+    .mission-text {
+        font-size: 1.4vw;
+        color: #FDFEFF;
+        margin: 1vw;
+    }
+    .vision-text {
+        font-size: 1.4vw;
+        color: #FDFEFF;
+        margin: 1vw;
+    }
+    .informacion-adicional {
+        text-align: justify;
+        background-color: #FDFEFF; 
+        margin-top: -30vh;
+    }
+    .Quienes-somos {
+        text-align: center;
+        color: #0e93b4;
+        font-size: 1.6vw;
+        margin: 4vh; 
+    }
+    .text-p {
+        font-size: 1.7vw; 
+        line-height: 1.5; 
+        color: #444; 
+        text-align: justify;
+        margin: 3vw; 
+        max-width: 80vw; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    .video-style {
+        border-radius: 0.4vw;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.719); 
+        width: 70%; 
+        height: auto; 
+        display: block; 
+        margin-left: 14vw;
+        padding: 0.3vw; 
+    }
+    .parrafo {
+        font-size: 1.7vw;  
+        line-height: 1.5; 
+        color: #444; 
+        text-align: justify;
+        margin: 4vw; 
+        max-width: 80vw; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    .whatsapp-container {
+        position: relative;
+        text-align: right;
+        padding-right: 80px;
+        margin: 1%;
+    }
+
+    .whatsapp-button {
+        display: inline-block;
+        background-color: #39A9DA;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.6s;
+        text-align: center;
+        animation: moveUpDown 2s ease-in-out infinite;
+    }
+
+    .whatsapp-button img {
+        width: 15vw;
+        height: auto;
+    }
+
+    .whatsapp-button:hover {
+        transform: scale(1.1);
+    }
+
+    .footer {
+        display: flex;
+        background-color: #058da5;
+        padding: 20px 30px;
+        position: relative;
+        color: black;
+        font-size: 1vw;
+    }
+
+    .footer-follow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+        gap: 5vw;
+    }
+
+    .footer-text {
+        margin: 0;
+    }
+
+    .footer-section {
+        padding-right: 5vw;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-logo {
+        width: 10vw;
+        height: auto;
+        margin-top: 4vw;
+        border-radius: 5px;
+        margin-left: -2vw;
+        align-items: center;
+        padding-left: 2.5vw;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+}
+@media (max-width:600px) {
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .banner {
+        margin: -1vh;
+        position: relative; 
+        top: 3vh;
+        margin-left:1vw ; 
+        transform: translateX(-50%); 
+        width: 85vw; 
+        border: 1px solid #27b8d100; 
+        padding: 10px; 
+        border-radius: 10px; 
+        z-index: 1000; 
+        background-color: rgba(107, 146, 182, 0.185); 
+    }
+    .header-content {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        gap: 100px; 
+        flex-wrap: wrap;
+    }
+    .logo img {
+        width: 70px;
+        height: auto; 
+    }
+    .navigation ul {
+        list-style-type: none; 
+        margin: 0;
+        padding: 0; 
+        display: flex; 
+        gap: 4vw; 
+        flex-wrap: wrap; 
+        font-size: 1.2vw;
+    }
+    .navigation a {
+        text-decoration: none;
+        color: #002035;
+        font-weight: bold;
+        padding: 2px;
+        border-radius: 20px;   
+    }
+    .navigation a:hover {
+        color: #EE6930; 
+    }
+
+    .mission-title {
+        color: #0c3970; 
+        font-size: 2.2vw; 
+        margin: 0; 
+        text-align: center;
+        margin-top: 1.5vh;
+    }
+    .vision-title {
+        color: #0c3970; 
+        font-size: 2.2vw; 
+        margin: 0; 
+        text-align: center;
+        margin-top: 1.5vh;
+    }
+    .text-container {
+        border: 1px solid #27b8d173; 
+        background-color: rgba(107, 146, 182, 0.24); 
+        margin: 2px;
+        width: 80vw;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        position: relative; 
+        z-index: 1; 
+        top: 26vh; 
+        transition: background-color 0.3s ease; 
+    }
+    .text-container:hover {
+        background-color: rgba(107, 146, 182, 0.5); 
+    }
+    .mission-text {
+        font-size: 1.4vw;
+        color: #FDFEFF;
+        margin: 1vw;
+    }
+    .vision-text {
+        font-size: 1.4vw;
+        color: #FDFEFF;
+        margin: 1vw;
+    }
+    .informacion-adicional {
+        text-align: justify;
+        background-color: #FDFEFF; 
+        margin-top: -30vh;
+    }
+    .Quienes-somos {
+        text-align: center;
+        color: #0e93b4;
+        font-size: 1.6vw;
+        margin: 4vh; 
+    }
+    .text-p {
+        font-size: 1.7vw; 
+        line-height: 1.5; 
+        color: #444; 
+        text-align: justify;
+        margin: 3vw; 
+        max-width: 80vw; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    .video-style {
+        border-radius: 0.4vw;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.719); 
+        width: 70%; 
+        height: auto; 
+        display: block; 
+        margin-left: 14vw;
+        padding: 0.3vw; 
+    }
+    .parrafo {
+        font-size: 1.7vw;  
+        line-height: 1.5; 
+        color: #444; 
+        text-align: justify;
+        margin: 4vw; 
+        max-width: 80vw; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    /* WhatsApp */
+    .whatsapp-button {
+        display: inline-block;
+        background-color: #39A9DA;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.6s;
+        animation: moveUpDown 2s ease-in-out infinite;
+        margin-left: 50px;
+    }
+
+    .whatsapp-button img {
+        width: 10vw;
+        height: auto;
+    }
+
+    .whatsapp-button:hover {
+        transform: scale(1.1);
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .footer-follow {
+        flex-direction: column;
+        margin-left: 2%;
+        gap: 6vw;
+
+    }
+
+    .footer-logo {
+        width: 20vw;
+    }
+
+    .contact-info {
+        gap: 2vw;
+        
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4vw;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .location-section {
+        align-items: center;
+    }
+
+    .sede-title {
+        font-size: 4vw;
+        text-align: center;
+    }
+    .location-map {
+        width: 50%;
+        align-items: center;
+    }
+
+    .direccion-text {
+        font-size: 3vw;
+        text-align: center;
+    }
+}
